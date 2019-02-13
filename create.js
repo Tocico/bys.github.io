@@ -1,30 +1,21 @@
 //________________Array för lagring av regler_____________________
-let header = ["\nheader{\n","","","}",];
-console.log(header);
+let header = ["\nheader{\n","","}",];
 //[1] bg-color
-let h1 = ["\nh1{\n","","","","","","}",]; 
-console.log(h1);
+let h1 = ["\nh1{\n","","","","","}",]; 
 // [1][2][3][4]
-let nav_bc = ["\nnav{\n","","","","","","}",];
-console.log(nav_bc);
+let nav_bc = ["\nnav{\n","","}",];
 //[1] bg-color
-let nav_anchor = ["\nnav a{\n","","","","","","}",];
-console.log(nav_anchor);
+let nav_anchor = ["\nnav a{\n","","","","","}",];
 // [1][2][3][4]
-let section_bc = ["\nsection{\n","","","","","","}",];
-console.log(section_bc);
+let section_bc = ["\nsection{\n","","}",];
 // [1] bg-color
-let section_h2 = ["\nsection h2{\n","","","","","","}",];
-console.log(section_h2);
+let section_h2 = ["\nsection h2{\n","","","","","}",];
 // [1][2][3][4]
-let section_p = ["\nsection p{\n","","","","","","}",];
-console.log(section_p);
+let section_p = ["\nsection p{\n","","","","","}",];
 // [1][2][3][4]
-let footer_h2 = ["\nfooter h2{\n","","","","","","}",];
-console.log(footer_h2);
+let footer_h2 = ["\nfooter h2{\n","","","","","}",];
 //[1][2][3][4]
-let footer_bc = ["\nfooter{\n","","","","","","}",];
-console.log(footer_bc);
+let footer_bc = ["\nfooter{\n","","}",];
 // [1] bg-color
 // _______________________font-family_______________________________
 
@@ -673,7 +664,6 @@ let btn = document.getElementById("dwnld");
 btn.addEventListener('click', function() {
   let ipt = ["/*------------------------Layout1-----------------------------*/"+(header.concat(style1.info(),h1,nav_bc,nav_anchor,section_bc,section_h2,section_p,footer_bc,footer_h2).join(""))+"\n/*------------------------Layout2-----------------------------*/"+(header.concat(style2.info(),h1,nav_bc,nav_anchor,section_bc,section_h2,section_p,footer_bc,footer_h2).join(""))+ "\n/*------------------------Layout3-----------------------------*/"+(header.concat(style3.info(),h1,nav_bc,nav_anchor,section_bc,section_h2,section_p,footer_bc,footer_h2).join(""))];
   let file1 = new Blob([ipt], {type: "text/css; charset=utf-8}"});  //constructor([innehåll] , {typ: texts som html})
-  console.log(file1);
   let a = document.getElementById("a");
   a.href = URL.createObjectURL(file1); //href="blob:null/8c7a0f22-53b8-440a-99c9-480a3f5e5cf4"
   a.download = "style.css"; // "style.css"
