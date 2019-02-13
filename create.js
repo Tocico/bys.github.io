@@ -1,21 +1,21 @@
 //________________Array för lagring av regler_____________________
-let header = ["\nheader{\n","","}",];
+let header = ["\n\nheader{\n","","}\n",];
 //[1] bg-color
-let h1 = ["\nh1{\n","","","","","}",]; 
+let h1 = ["\n\nh1{\n","","","","","}",]; 
 // [1][2][3][4]
-let nav_bc = ["\nnav{\n","","}",];
+let nav_bc = ["\n\nnav{\n","","}",];
 //[1] bg-color
-let nav_anchor = ["\nnav a{\n","","","","","}",];
+let nav_anchor = ["\n\nnav a{\n","","","","","}",];
 // [1][2][3][4]
-let section_bc = ["\nsection{\n","","}",];
+let section_bc = ["\n\nsection{\n","","}",];
 // [1] bg-color
-let section_h2 = ["\nsection h2{\n","","","","","}",];
+let section_h2 = ["\n\nsection h2{\n","","","","","}",];
 // [1][2][3][4]
-let section_p = ["\nsection p{\n","","","","","}",];
+let section_p = ["\n\nsection p{\n","","","","","}",];
 // [1][2][3][4]
-let footer_h2 = ["\nfooter h2{\n","","","","","}",];
+let footer_h2 = ["\n\nfooter h2{\n","","","","","}",];
 //[1][2][3][4]
-let footer_bc = ["\nfooter{\n","","}",];
+let footer_bc = ["\n\nfooter{\n","","}",];
 // [1] bg-color
 // _______________________font-family_______________________________
 
